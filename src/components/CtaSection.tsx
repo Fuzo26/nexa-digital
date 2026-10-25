@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { INSTAGRAM_CONFIG } from "@/config/site";
 import { WhatsAppButton } from "./WhatsAppButton";
 
 const INTEREST_OPTIONS = [
@@ -8,25 +9,25 @@ const INTEREST_OPTIONS = [
     id: "landing-page",
     label: "Landing Page",
     message:
-      "Olá! Vim pelo site da NEXA DIGITAL e gostaria de solicitar um orçamento para uma Landing Page.",
+      "Olá! Vim pela landing page da NEXA DIGITAL e tenho interesse em criar uma landing page profissional para minha empresa. Gostaria de conhecer as opções e solicitar um orçamento.",
   },
   {
     id: "aplicativo",
     label: "Aplicativo",
     message:
-      "Olá! Vim pelo site da NEXA DIGITAL e gostaria de conversar sobre o desenvolvimento de um Aplicativo.",
+      "Olá! Vim pela landing page da NEXA DIGITAL e tenho interesse em desenvolver um aplicativo. Gostaria de apresentar minha ideia e solicitar um orçamento.",
   },
   {
     id: "software",
     label: "Software Personalizado",
     message:
-      "Olá! Vim pelo site da NEXA DIGITAL e tenho interesse em desenvolver um Software Personalizado para minha empresa.",
+      "Olá! Vim pela landing page da NEXA DIGITAL e tenho interesse em desenvolver um software personalizado para meu negócio. Gostaria de conversar sobre meu projeto.",
   },
   {
     id: "automacao",
     label: "Automações",
     message:
-      "Olá! Vim pelo site da NEXA DIGITAL e quero entender como aplicar Automações no meu negócio.",
+      "Olá! Vim pela landing page da NEXA DIGITAL e tenho interesse em automatizar processos da minha empresa. Gostaria de conhecer as soluções disponíveis.",
   },
   {
     id: "geral",
@@ -146,13 +147,37 @@ export function CtaSection() {
                   </p>
                 </div>
 
-                <div className="mt-6">
+                <div className="mt-6 flex flex-col gap-3">
                   <WhatsAppButton
                     label="Iniciar Conversa no WhatsApp"
                     customMessage={activeOption.message}
                     variant="primary"
                     className="w-full"
                   />
+
+                  <a
+                    href={INSTAGRAM_CONFIG.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Siga a NEXA DIGITAL no Instagram (${INSTAGRAM_CONFIG.handle})`}
+                    className="inline-flex w-full items-center justify-center gap-2.5 rounded-xl border border-white/15 bg-white/[0.03] px-5 py-3 text-sm font-semibold text-slate-200 transition-all duration-300 hover:border-cyan-400/50 hover:bg-white/[0.07] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-400"
+                  >
+                    <svg
+                      className="h-5 w-5 shrink-0 text-cyan-300"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                    <span>Instagram Oficial</span>
+                  </a>
                 </div>
 
                 <p className="mt-4 text-center text-xs text-slate-400">

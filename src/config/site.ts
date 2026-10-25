@@ -4,9 +4,14 @@ export const WHATSAPP_CONFIG = {
    * Quando preenchido, todos os botões comerciais abrirão diretamente a conversa no WhatsApp.
    * Enquanto estiver vazio, os botões direcionam para a seção de contato (#contato) ou exibem o link preparado.
    */
-  phoneNumber: "",
+  phoneNumber: "5513988736485",
   defaultMessage:
     "Olá! Vim pelo site da NEXA DIGITAL e gostaria de conversar sobre uma solução para o meu negócio.",
+};
+
+export const INSTAGRAM_CONFIG = {
+  handle: "@nexa_digital33",
+  url: "https://www.instagram.com/nexa_digital33/",
 };
 
 export function getWhatsAppUrl(customMessage?: string): string {
@@ -31,10 +36,24 @@ export interface NavItem {
 export const NAV_ITEMS: NavItem[] = [
   { label: "Início", href: "#inicio" },
   { label: "Serviços", href: "#servicos" },
+  { label: "Planos Mensais", href: "#planos" },
   { label: "Diferenciais", href: "#diferenciais" },
   { label: "Como funciona", href: "#como-funciona" },
   { label: "Contato", href: "#contato" },
 ];
+
+/**
+ * Flag para ativação da exibição dos valores de referência por parcela nos cards de serviços.
+ */
+export const SHOW_SERVICE_PRICING = true;
+
+export interface ServicePricing {
+  enabled: boolean;
+  prefix: string;
+  installmentValue: string;
+  installmentSuffix: string;
+  proposalNote: string;
+}
 
 export interface ServiceItem {
   id: string;
@@ -42,10 +61,25 @@ export interface ServiceItem {
   title: string;
   subtitle: string;
   description: string;
+  pricing: ServicePricing;
   highlights: string[];
   whatsappMessage: string;
   accent: "blue" | "cyan" | "teal" | "emerald";
 }
+
+export const COMMERCIAL_PAYMENT_HIGHLIGHT = {
+  title: "Seu próximo projeto digital cabe no seu planejamento.",
+  description:
+    "Desenvolva seu site, aplicativo, software ou automação com condições facilitadas de pagamento.",
+  highlight: "Parcele em até 10x no cartão de crédito.",
+  complementaryText:
+    "Transforme suas ideias em soluções digitais com uma proposta personalizada para as necessidades do seu negócio.",
+  ctaLabel: "QUERO SOLICITAR MEU ORÇAMENTO",
+  whatsappMessage:
+    "Olá! Vim pelo site da NEXA DIGITAL e quero solicitar meu orçamento personalizado.",
+  proposalConditionNote:
+    "As condições específicas de pagamento e parcelamento serão apresentadas na proposta comercial.",
+};
 
 export const SERVICES: ServiceItem[] = [
   {
@@ -55,6 +89,14 @@ export const SERVICES: ServiceItem[] = [
     subtitle: "Páginas estratégicas projetadas para apresentar seu negócio e gerar oportunidades.",
     description:
       "Desenvolvemos páginas institucionais e de vendas com visual sofisticado, carregamento rápido e estrutura persuasiva. Ideal para profissionais autônomos e empresas que desejam transmitir credibilidade imediata e facilitar o contato de novos clientes.",
+    pricing: {
+      enabled: true,
+      prefix: "A partir de",
+      installmentValue: "R$ 99,70",
+      installmentSuffix: "por parcela",
+      proposalNote:
+        "O valor total e as condições específicas de pagamento serão apresentados na proposta comercial.",
+    },
     highlights: [
       "Design exclusivo alinhado à identidade da sua marca",
       "Estrutura pensada para conversão e captação de contatos",
@@ -62,7 +104,7 @@ export const SERVICES: ServiceItem[] = [
       "Otimização técnica de velocidade e SEO estrutural",
     ],
     whatsappMessage:
-      "Olá! Vim pelo site da NEXA DIGITAL e tenho interesse na criação de uma Landing Page.",
+      "Olá! Vim pela landing page da NEXA DIGITAL e tenho interesse em criar uma landing page profissional para minha empresa. Gostaria de conhecer as opções e solicitar um orçamento.",
     accent: "blue",
   },
   {
@@ -72,6 +114,14 @@ export const SERVICES: ServiceItem[] = [
     subtitle: "Experiências digitais intuitivas na palma da mão do seu cliente ou equipe.",
     description:
       "Criamos aplicativos modernos e funcionais, desenhados com foco em usabilidade, fluidez e estabilidade. Seja para oferecer um novo canal de atendimento e serviços aos seus clientes ou para apoiar operações em campo.",
+    pricing: {
+      enabled: true,
+      prefix: "A partir de",
+      installmentValue: "R$ 299,70",
+      installmentSuffix: "por parcela",
+      proposalNote:
+        "O valor total e as condições específicas de pagamento serão apresentados na proposta comercial.",
+    },
     highlights: [
       "Interface moderna, intuitiva e fácil de navegar",
       "Desenvolvimento focado em desempenho e estabilidade",
@@ -79,7 +129,7 @@ export const SERVICES: ServiceItem[] = [
       "Integração com sistemas, bancos de dados e APIs externas",
     ],
     whatsappMessage:
-      "Olá! Vim pelo site da NEXA DIGITAL e gostaria de conversar sobre o desenvolvimento de um Aplicativo.",
+      "Olá! Vim pela landing page da NEXA DIGITAL e tenho interesse em desenvolver um aplicativo. Gostaria de apresentar minha ideia e solicitar um orçamento.",
     accent: "cyan",
   },
   {
@@ -89,6 +139,14 @@ export const SERVICES: ServiceItem[] = [
     subtitle: "Sistemas sob medida que se adaptam à rotina da sua empresa, e não o contrário.",
     description:
       "Substitua controles manuais e planilhas desconectadas por um sistema web desenvolvido especificamente para as regras do seu negócio. Centralize informações, organize fluxos de trabalho e tenha visão clara da sua operação.",
+    pricing: {
+      enabled: true,
+      prefix: "A partir de",
+      installmentValue: "R$ 399,70",
+      installmentSuffix: "por parcela",
+      proposalNote:
+        "O valor total e as condições específicas de pagamento serão apresentados na proposta comercial.",
+    },
     highlights: [
       "Mapeamento completo das necessidades da sua operação",
       "Painéis administrativos claros e controle de acessos",
@@ -96,7 +154,7 @@ export const SERVICES: ServiceItem[] = [
       "Flexibilidade para adicionar novas funcionalidades no futuro",
     ],
     whatsappMessage:
-      "Olá! Vim pelo site da NEXA DIGITAL e procuro um Software Personalizado para minha empresa.",
+      "Olá! Vim pela landing page da NEXA DIGITAL e tenho interesse em desenvolver um software personalizado para meu negócio. Gostaria de conversar sobre meu projeto.",
     accent: "teal",
   },
   {
@@ -106,6 +164,14 @@ export const SERVICES: ServiceItem[] = [
     subtitle: "Processos inteligentes para reduzir tarefas manuais e ganhar tempo produtivo.",
     description:
       "Conectamos ferramentas, organizamos fluxos de atendimento e automatizamos rotinas operacionais repetitivas. Assim, você e sua equipe dedicam energia ao que realmente importa: atender clientes e expandir o negócio.",
+    pricing: {
+      enabled: true,
+      prefix: "A partir de",
+      installmentValue: "R$ 49,70",
+      installmentSuffix: "por parcela",
+      proposalNote:
+        "O valor total e as condições específicas de pagamento serão apresentados na proposta comercial.",
+    },
     highlights: [
       "Integração entre canais de comunicação e ferramentas digitais",
       "Padronização de processos e redução de falhas operacionais",
@@ -113,10 +179,86 @@ export const SERVICES: ServiceItem[] = [
       "Soluções práticas desenhadas para a realidade do seu dia a dia",
     ],
     whatsappMessage:
-      "Olá! Vim pelo site da NEXA DIGITAL e quero saber mais sobre Automações para o meu negócio.",
+      "Olá! Vim pela landing page da NEXA DIGITAL e tenho interesse em automatizar processos da minha empresa. Gostaria de conhecer as soluções disponíveis.",
     accent: "emerald",
   },
 ];
+
+export interface MaintenancePlanItem {
+  id: string;
+  badge: string;
+  title: string;
+  pricePrefix: string;
+  price: string;
+  period: string;
+  description: string;
+  features: string[];
+  whatsappMessage: string;
+  accent: "blue" | "cyan" | "emerald";
+}
+
+export const MAINTENANCE_PLANS: MaintenancePlanItem[] = [
+  {
+    id: "manutencao-essencial",
+    badge: "Sites & Landing Pages",
+    title: "Manutenção Essencial",
+    pricePrefix: "A partir de",
+    price: "R$ 97,00",
+    period: "/mês",
+    description:
+      "Acompanhamento contínuo para manter sua página institucional ou landing page sempre ativa, atualizada e segura.",
+    features: [
+      "Monitoramento de disponibilidade e desempenho",
+      "Atualizações pontuais de textos, imagens e links",
+      "Verificações preventivas de segurança e funcionamento",
+      "Suporte técnico conforme escopo definido em proposta",
+    ],
+    whatsappMessage:
+      "Olá! Vim pelo site da NEXA DIGITAL e gostaria de saber mais sobre o plano mensal de Manutenção Essencial (a partir de R$ 97,00/mês).",
+    accent: "blue",
+  },
+  {
+    id: "manutencao-aplicativos",
+    badge: "Mobile & Web Apps",
+    title: "Aplicativos",
+    pricePrefix: "A partir de",
+    price: "R$ 147,00",
+    period: "/mês",
+    description:
+      "Suporte técnico e manutenção recorrente para garantir fluidez, estabilidade e operação contínua do seu aplicativo.",
+    features: [
+      "Manutenção preventiva e corretiva da aplicação",
+      "Monitoramento de APIs e serviços integrados",
+      "Ajustes técnicos de compatibilidade e estabilidade",
+      "Atendimento técnico conforme limites da proposta comercial",
+    ],
+    whatsappMessage:
+      "Olá! Vim pelo site da NEXA DIGITAL e gostaria de saber mais sobre o plano mensal de manutenção para Aplicativos (a partir de R$ 147,00/mês).",
+    accent: "cyan",
+  },
+  {
+    id: "manutencao-softwares",
+    badge: "Sistemas Sob Medida",
+    title: "Softwares",
+    pricePrefix: "A partir de",
+    price: "R$ 197,00",
+    period: "/mês",
+    description:
+      "Sustentação dedicada para softwares personalizados, assegurando continuidade operacional e apoio técnico ao seu negócio.",
+    features: [
+      "Acompanhamento técnico de rotinas e módulos do sistema",
+      "Correções operacionais e otimizações de desempenho",
+      "Verificação de integridade e rotinas de segurança",
+      "Suporte especializado conforme escopo definido em proposta",
+    ],
+    whatsappMessage:
+      "Olá! Vim pelo site da NEXA DIGITAL e gostaria de saber mais sobre o plano mensal de manutenção para Softwares (a partir de R$ 197,00/mês).",
+    accent: "emerald",
+  },
+];
+
+export const MAINTENANCE_DISCLAIMER =
+  "Os valores apresentados são iniciais. O escopo detalhado, os limites de suporte, a hospedagem e os serviços de terceiros devem ser definidos na proposta comercial.";
 
 export interface DifferentialItem {
   title: string;
@@ -195,4 +337,3 @@ export const PROCESS_STEPS: ProcessStep[] = [
       "Realizamos a implantação final e orientamos você sobre o uso da solução para que aproveite todo o potencial tecnológico.",
   },
 ];
-
