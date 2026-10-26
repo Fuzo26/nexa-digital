@@ -93,7 +93,7 @@ export function Hero() {
                   alt="Notebook moderno aberto exibindo na tela clara o site institucional da NEXA DIGITAL com a logo oficial, cabeçalho, apresentação e serviços de Landing Pages, Aplicativos, Softwares e Automações"
                   width={1376}
                   height={768}
-                  sizes="(max-width: 1024px) 100vw, 720px"
+                  sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 1024px) 672px, 720px"
                   style={{ objectFit: "contain" }}
                   className="h-auto w-full object-contain"
                   priority

@@ -166,13 +166,18 @@ export function DifferentialsSection() {
         {/* Subseção: Como Funciona (Metodologia de Trabalho) */}
         <div
           id="como-funciona"
+          role="region"
+          aria-labelledby="process-heading"
           className="mt-24 scroll-mt-24 rounded-3xl border border-white/10 bg-gradient-to-b from-[#091226] to-[#060c1a] p-6 sm:p-10 lg:p-12"
         >
           <div className="max-w-2xl">
             <span className="text-xs font-semibold uppercase tracking-widest text-cyan-300">
               Nosso Processo
             </span>
-            <h3 className="mt-2 text-2xl font-bold text-white sm:text-3xl">
+            <h3
+              id="process-heading"
+              className="mt-2 text-2xl font-bold text-white sm:text-3xl"
+            >
               Como transformamos sua ideia em uma solução digital pronta para operar
             </h3>
             <p className="mt-3 text-sm sm:text-base text-slate-300">

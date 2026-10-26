@@ -339,3 +339,63 @@ export const PROCESS_STEPS: ProcessStep[] = [
       "Realizamos a implantação final e orientamos você sobre o uso da solução para que aproveite todo o potencial tecnológico.",
   },
 ];
+
+export const SITE_DESCRIPTION =
+  "Desenvolvimento de landing pages, aplicativos, softwares personalizados e automações sob medida para pequenas empresas e profissionais.";
+
+export const STRUCTURED_DATA = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": `${SITE_URL}/#organization`,
+      name: "NEXA DIGITAL",
+      url: `${SITE_URL}/`,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/nexa-logo-transparent.png`,
+        width: 266,
+        height: 226,
+      },
+      image: `${SITE_URL}/nexa-logo.jpg`,
+      description: SITE_DESCRIPTION,
+      telephone: "+55-13-98873-6485",
+      sameAs: [INSTAGRAM_CONFIG.url],
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "+55-13-98873-6485",
+          contactType: "customer service",
+          availableLanguage: ["Portuguese"],
+        },
+      ],
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Soluções Digitais NEXA DIGITAL",
+        itemListElement: SERVICES.map((service) => ({
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            "@id": `${SITE_URL}/#${service.id}`,
+            name: service.title,
+            description: service.description,
+            provider: {
+              "@id": `${SITE_URL}/#organization`,
+            },
+          },
+        })),
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      url: `${SITE_URL}/`,
+      name: "NEXA DIGITAL",
+      description: SITE_DESCRIPTION,
+      inLanguage: "pt-BR",
+      publisher: {
+        "@id": `${SITE_URL}/#organization`,
+      },
+    },
+  ],
+};

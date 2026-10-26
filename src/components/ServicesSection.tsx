@@ -164,8 +164,9 @@ export function ServicesSection() {
               const styles = ACCENT_STYLES[service.accent];
               return (
                 <article
+                  id={service.id}
                   key={service.id}
-                  className={`group relative flex flex-col justify-between rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-white/[0.015] p-6 sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:bg-white/[0.05] hover:shadow-[0_20px_50px_-20px_rgba(16,208,120,0.2)] ${styles.borderHover}`}
+                  className={`group relative scroll-mt-24 flex flex-col justify-between rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-white/[0.015] p-6 sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:bg-white/[0.05] hover:shadow-[0_20px_50px_-20px_rgba(16,208,120,0.2)] ${styles.borderHover}`}
                 >
                   <div>
                     {/* Topo do Card */}
