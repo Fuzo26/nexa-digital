@@ -1,3 +1,5 @@
+export const SITE_URL = "https://nexadigitaltech.com.br";
+
 export const WHATSAPP_CONFIG = {
   /**
    * Insira apenas números com DDI + DDD + Número (ex: "5511999999999")

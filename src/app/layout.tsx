@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { SITE_URL } from "@/config/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,14 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ??
-      (process.env.VERCEL_PROJECT_PRODUCTION_URL
-        ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-        : process.env.VERCEL_URL
-          ? `https://${process.env.VERCEL_URL}`
-          : "http://localhost:3000")
-  ),
+  metadataBase: new URL(SITE_URL),
   title: "NEXA DIGITAL | Landing Pages, Aplicativos, Softwares e Automações",
   description:
     "Soluções tecnológicas sob medida para pequenas empresas e profissionais autônomos. Criação de landing pages de alta conversão, aplicativos, softwares personalizados e automações inteligentes.",
@@ -33,10 +27,14 @@ export const metadata: Metadata = {
     "tecnologia para autônomos",
     "desenvolvimento web",
   ],
+  alternates: {
+    canonical: SITE_URL,
+  },
   openGraph: {
     title: "NEXA DIGITAL | Tecnologia Sob Medida para o Seu Negócio",
     description:
       "Landing pages, aplicativos, softwares personalizados e automações desenvolvidos para impulsionar pequenas empresas e profissionais autônomos.",
+    url: SITE_URL,
     type: "website",
     locale: "pt_BR",
     siteName: "NEXA DIGITAL",
@@ -48,6 +46,13 @@ export const metadata: Metadata = {
         alt: "Logo oficial da NEXA DIGITAL",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NEXA DIGITAL | Tecnologia Sob Medida para o Seu Negócio",
+    description:
+      "Landing pages, aplicativos, softwares personalizados e automações desenvolvidos para impulsionar pequenas empresas e profissionais autônomos.",
+    images: ["/nexa logo.jpg"],
   },
   robots: {
     index: true,
