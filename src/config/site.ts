@@ -36,12 +36,12 @@ export interface NavItem {
 }
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: "Início", href: "#inicio" },
-  { label: "Serviços", href: "#servicos" },
-  { label: "Planos Mensais", href: "#planos" },
-  { label: "Diferenciais", href: "#diferenciais" },
-  { label: "Como funciona", href: "#como-funciona" },
-  { label: "Contato", href: "#contato" },
+  { label: "Início", href: "/#inicio" },
+  { label: "Serviços", href: "/#servicos" },
+  { label: "Planos Mensais", href: "/#planos" },
+  { label: "Diferenciais", href: "/#diferenciais" },
+  { label: "Como funciona", href: "/#como-funciona" },
+  { label: "Contato", href: "/#contato" },
 ];
 
 /**
@@ -59,6 +59,7 @@ export interface ServicePricing {
 
 export interface ServiceItem {
   id: string;
+  href: string;
   badge: string;
   title: string;
   subtitle: string;
@@ -86,6 +87,7 @@ export const COMMERCIAL_PAYMENT_HIGHLIGHT = {
 export const SERVICES: ServiceItem[] = [
   {
     id: "landing-pages",
+    href: "/criacao-landing-pages",
     badge: "Presença & Conversão",
     title: "Landing Pages",
     subtitle: "Páginas estratégicas projetadas para apresentar seu negócio e gerar oportunidades.",
@@ -111,6 +113,7 @@ export const SERVICES: ServiceItem[] = [
   },
   {
     id: "aplicativos",
+    href: "/desenvolvimento-de-aplicativos",
     badge: "Mobilidade & Experiência",
     title: "Aplicativos",
     subtitle: "Experiências digitais intuitivas na palma da mão do seu cliente ou equipe.",
@@ -136,6 +139,7 @@ export const SERVICES: ServiceItem[] = [
   },
   {
     id: "softwares",
+    href: "/softwares-personalizados",
     badge: "Gestão & Controle",
     title: "Softwares Personalizados",
     subtitle: "Sistemas sob medida que se adaptam à rotina da sua empresa, e não o contrário.",
@@ -161,6 +165,7 @@ export const SERVICES: ServiceItem[] = [
   },
   {
     id: "automacoes",
+    href: "/automacao-empresarial",
     badge: "Eficiência & Escala",
     title: "Automações",
     subtitle: "Processos inteligentes para reduzir tarefas manuais e ganhar tempo produtivo.",
@@ -184,6 +189,14 @@ export const SERVICES: ServiceItem[] = [
       "Olá! Vim pela landing page da NEXA DIGITAL e tenho interesse em automatizar processos da minha empresa. Gostaria de conhecer as soluções disponíveis.",
     accent: "emerald",
   },
+];
+
+export const FOOTER_SERVICE_LINKS: NavItem[] = [
+  { label: "Criação de Landing Pages", href: "/criacao-landing-pages" },
+  { label: "Criação de Sites Profissionais", href: "/criacao-de-sites" },
+  { label: "Desenvolvimento de Aplicativos", href: "/desenvolvimento-de-aplicativos" },
+  { label: "Softwares Personalizados", href: "/softwares-personalizados" },
+  { label: "Automação Empresarial", href: "/automacao-empresarial" },
 ];
 
 export interface MaintenancePlanItem {
@@ -372,18 +385,35 @@ export const STRUCTURED_DATA = {
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "Soluções Digitais NEXA DIGITAL",
-        itemListElement: SERVICES.map((service) => ({
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            "@id": `${SITE_URL}/#${service.id}`,
-            name: service.title,
-            description: service.description,
-            provider: {
-              "@id": `${SITE_URL}/#organization`,
+        itemListElement: [
+          ...SERVICES.map((service) => ({
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              "@id": `${SITE_URL}${service.href}#service`,
+              url: `${SITE_URL}${service.href}`,
+              name: service.title,
+              description: service.description,
+              provider: {
+                "@id": `${SITE_URL}/#organization`,
+              },
+            },
+          })),
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              "@id": `${SITE_URL}/criacao-de-sites#service`,
+              url: `${SITE_URL}/criacao-de-sites`,
+              name: "Criação de Sites Profissionais",
+              description:
+                "Criação de sites profissionais e institucionais sob medida para empresas e profissionais, com estrutura responsiva e otimizada para o Google.",
+              provider: {
+                "@id": `${SITE_URL}/#organization`,
+              },
             },
           },
-        })),
+        ],
       },
     },
     {

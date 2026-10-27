@@ -1,5 +1,7 @@
+import Link from "next/link";
 import {
   COMMERCIAL_PAYMENT_HIGHLIGHT,
+  FOOTER_SERVICE_LINKS,
   MAINTENANCE_DISCLAIMER,
   MAINTENANCE_PLANS,
   SERVICES,
@@ -185,7 +187,12 @@ export function ServicesSection() {
 
                     {/* Título e Descrição */}
                     <h3 className="mt-6 text-2xl font-bold text-white">
-                      {service.title}
+                      <Link
+                        href={service.href}
+                        className="transition-colors hover:text-emerald-300 focus-visible:outline-2 focus-visible:outline-emerald-400"
+                      >
+                        {service.title}
+                      </Link>
                     </h3>
                     <p className="mt-2 text-sm sm:text-base font-medium text-slate-200">
                       {service.subtitle}
@@ -241,18 +248,58 @@ export function ServicesSection() {
                     </ul>
                   </div>
 
-                  {/* Botão de Ação Específico do Serviço */}
-                  <div className="mt-8 pt-4">
+                  {/* Botão de Ação Específico do Serviço + Link para Página Dedicada */}
+                  <div className="mt-8 pt-4 space-y-3">
                     <WhatsAppButton
                       label={`Quero conversar sobre ${service.title}`}
                       customMessage={service.whatsappMessage}
                       variant="outline"
                       className="w-full"
                     />
+                    <div className="text-center">
+                      <Link
+                        href={service.href}
+                        className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-cyan-300 transition-colors hover:text-emerald-300 focus-visible:outline-2 focus-visible:outline-emerald-400"
+                      >
+                        <span>Saiba mais sobre {service.title}</span>
+                        <span aria-hidden="true">→</span>
+                      </Link>
+                    </div>
                   </div>
                 </article>
               );
             })}
+          </div>
+
+          {/* Acesso Rápido às Páginas Especializadas de Serviços (incluindo Criação de Sites Profissionais) */}
+          <div className="mt-10 rounded-2xl border border-white/10 bg-white/[0.025] p-5 sm:p-6">
+            <div className="flex flex-col items-start justify-between gap-4 lg:flex-row lg:items-center">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-widest text-cyan-300">
+                  Páginas Especializadas
+                </p>
+                <p className="mt-1 text-sm sm:text-base text-slate-300">
+                  Confira em detalhes como cada solução funciona para o seu negócio:
+                </p>
+              </div>
+              <nav
+                aria-label="Páginas dedicadas de cada serviço"
+                className="flex flex-wrap gap-2"
+              >
+                {FOOTER_SERVICE_LINKS.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="inline-flex items-center gap-1.5 rounded-xl border border-white/15 bg-white/[0.04] px-3.5 py-2 text-xs sm:text-sm font-medium text-slate-200 transition-all duration-200 hover:border-emerald-400/50 hover:bg-emerald-500/10 hover:text-white focus-visible:outline-2 focus-visible:outline-emerald-400"
+                  >
+                    <span>{item.label}</span>
+                    <span aria-hidden="true" className="text-emerald-400">
+                      →
+                    </span>
+                  </Link>
+                ))}
+              </nav>
+            </div>
           </div>
 
           {/* Seção Comercial de Destaque — Condições Facilitadas em até 10x */}

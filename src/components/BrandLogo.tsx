@@ -31,7 +31,7 @@ export function BrandLogo({
 
   return (
     <Link
-      href="#inicio"
+      href="/"
       translate="no"
       aria-label="NEXA DIGITAL - Ir para o início"
       className={`notranslate group inline-flex items-center gap-3 rounded-xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-400 ${className}`}

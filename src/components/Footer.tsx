@@ -1,4 +1,9 @@
-import { INSTAGRAM_CONFIG, NAV_ITEMS, SERVICES } from "@/config/site";
+import Link from "next/link";
+import {
+  FOOTER_SERVICE_LINKS,
+  INSTAGRAM_CONFIG,
+  NAV_ITEMS,
+} from "@/config/site";
 import { BrandLogo } from "./BrandLogo";
 import { WhatsAppButton } from "./WhatsAppButton";
 
@@ -75,14 +80,14 @@ export function Footer() {
               Soluções Digitais
             </h3>
             <ul className="mt-4 space-y-2.5">
-              {SERVICES.map((service) => (
-                <li key={service.id}>
-                  <a
-                    href={`#${service.id}`}
+              {FOOTER_SERVICE_LINKS.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
                     className="text-sm text-slate-400 transition-colors hover:text-emerald-400"
                   >
-                    {service.title}
-                  </a>
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
