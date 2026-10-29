@@ -8,7 +8,7 @@ export const WHATSAPP_CONFIG = {
    */
   phoneNumber: "5513988736485",
   defaultMessage:
-    "Olá! Vim pelo site da NEXA DIGITAL e gostaria de conversar sobre uma solução para o meu negócio.",
+    "Olá! Vim pelo site da NEXZ DIGITAL e gostaria de conversar sobre uma solução para o meu negócio.",
 };
 
 export const INSTAGRAM_CONFIG = {
@@ -79,7 +79,7 @@ export const COMMERCIAL_PAYMENT_HIGHLIGHT = {
     "Transforme suas ideias em soluções digitais com uma proposta personalizada para as necessidades do seu negócio.",
   ctaLabel: "QUERO SOLICITAR MEU ORÇAMENTO",
   whatsappMessage:
-    "Olá! Vim pelo site da NEXA DIGITAL e quero solicitar meu orçamento personalizado.",
+    "Olá! Vim pelo site da NEXZ DIGITAL e quero solicitar meu orçamento personalizado.",
   proposalConditionNote:
     "As condições específicas de pagamento e parcelamento serão apresentadas na proposta comercial.",
 };
@@ -108,7 +108,7 @@ export const SERVICES: ServiceItem[] = [
       "Otimização técnica de velocidade e SEO estrutural",
     ],
     whatsappMessage:
-      "Olá! Vim pela landing page da NEXA DIGITAL e tenho interesse em criar uma landing page profissional para minha empresa. Gostaria de conhecer as opções e solicitar um orçamento.",
+      "Olá! Vim pela landing page da NEXZ DIGITAL e tenho interesse em criar uma landing page profissional para minha empresa. Gostaria de conhecer as opções e solicitar um orçamento.",
     accent: "blue",
   },
   {
@@ -134,7 +134,7 @@ export const SERVICES: ServiceItem[] = [
       "Integração com sistemas, bancos de dados e APIs externas",
     ],
     whatsappMessage:
-      "Olá! Vim pela landing page da NEXA DIGITAL e tenho interesse em desenvolver um aplicativo. Gostaria de apresentar minha ideia e solicitar um orçamento.",
+      "Olá! Vim pela landing page da NEXZ DIGITAL e tenho interesse em desenvolver um aplicativo. Gostaria de apresentar minha ideia e solicitar um orçamento.",
     accent: "cyan",
   },
   {
@@ -160,7 +160,7 @@ export const SERVICES: ServiceItem[] = [
       "Flexibilidade para adicionar novas funcionalidades no futuro",
     ],
     whatsappMessage:
-      "Olá! Vim pela landing page da NEXA DIGITAL e tenho interesse em desenvolver um software personalizado para meu negócio. Gostaria de conversar sobre meu projeto.",
+      "Olá! Vim pela landing page da NEXZ DIGITAL e tenho interesse em desenvolver um software personalizado para meu negócio. Gostaria de conversar sobre meu projeto.",
     accent: "teal",
   },
   {
@@ -186,7 +186,7 @@ export const SERVICES: ServiceItem[] = [
       "Soluções práticas desenhadas para a realidade do seu dia a dia",
     ],
     whatsappMessage:
-      "Olá! Vim pela landing page da NEXA DIGITAL e tenho interesse em automatizar processos da minha empresa. Gostaria de conhecer as soluções disponíveis.",
+      "Olá! Vim pela landing page da NEXZ DIGITAL e tenho interesse em automatizar processos da minha empresa. Gostaria de conhecer as soluções disponíveis.",
     accent: "emerald",
   },
 ];
@@ -229,7 +229,7 @@ export const MAINTENANCE_PLANS: MaintenancePlanItem[] = [
       "Suporte técnico conforme escopo definido em proposta",
     ],
     whatsappMessage:
-      "Olá! Vim pelo site da NEXA DIGITAL e gostaria de saber mais sobre o plano mensal de Manutenção Essencial (a partir de R$ 97,00/mês).",
+      "Olá! Vim pelo site da NEXZ DIGITAL e gostaria de saber mais sobre o plano mensal de Manutenção Essencial (a partir de R$ 97,00/mês).",
     accent: "blue",
   },
   {
@@ -248,7 +248,7 @@ export const MAINTENANCE_PLANS: MaintenancePlanItem[] = [
       "Atendimento técnico conforme limites da proposta comercial",
     ],
     whatsappMessage:
-      "Olá! Vim pelo site da NEXA DIGITAL e gostaria de saber mais sobre o plano mensal de manutenção para Aplicativos (a partir de R$ 147,00/mês).",
+      "Olá! Vim pelo site da NEXZ DIGITAL e gostaria de saber mais sobre o plano mensal de manutenção para Aplicativos (a partir de R$ 147,00/mês).",
     accent: "cyan",
   },
   {
@@ -267,7 +267,7 @@ export const MAINTENANCE_PLANS: MaintenancePlanItem[] = [
       "Suporte especializado conforme escopo definido em proposta",
     ],
     whatsappMessage:
-      "Olá! Vim pelo site da NEXA DIGITAL e gostaria de saber mais sobre o plano mensal de manutenção para Softwares (a partir de R$ 197,00/mês).",
+      "Olá! Vim pelo site da NEXZ DIGITAL e gostaria de saber mais sobre o plano mensal de manutenção para Softwares (a partir de R$ 197,00/mês).",
     accent: "emerald",
   },
 ];
@@ -362,15 +362,15 @@ export const STRUCTURED_DATA = {
     {
       "@type": ["Organization", "ProfessionalService"],
       "@id": `${SITE_URL}/#organization`,
-      name: "NEXA DIGITAL",
+      name: "NEXZ DIGITAL",
       url: `${SITE_URL}/`,
       logo: {
         "@type": "ImageObject",
-        url: `${SITE_URL}/nexa-logo-transparent.png`,
+        url: `${SITE_URL}/nexz-logo-transparent.png`,
         width: 266,
         height: 226,
       },
-      image: `${SITE_URL}/nexa-logo.jpg`,
+      image: `${SITE_URL}/nexz-logo-transparent.jpeg`,
       description: SITE_DESCRIPTION,
       telephone: "+55-13-98873-6485",
       sameAs: [INSTAGRAM_CONFIG.url],
@@ -384,7 +384,7 @@ export const STRUCTURED_DATA = {
       ],
       hasOfferCatalog: {
         "@type": "OfferCatalog",
-        name: "Soluções Digitais NEXA DIGITAL",
+        name: "Soluções Digitais NEXZ DIGITAL",
         itemListElement: [
           ...SERVICES.map((service) => ({
             "@type": "Offer",
@@ -420,7 +420,7 @@ export const STRUCTURED_DATA = {
       "@type": "WebSite",
       "@id": `${SITE_URL}/#website`,
       url: `${SITE_URL}/`,
-      name: "NEXA DIGITAL",
+      name: "NEXZ DIGITAL",
       description: SITE_DESCRIPTION,
       inLanguage: "pt-BR",
       publisher: {

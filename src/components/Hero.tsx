@@ -78,7 +78,7 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Coluna Direita: Notebook exibindo o site institucional claro da própria NEXA DIGITAL */}
+          {/* Coluna Direita: Notebook exibindo o site institucional claro da própria NEXZ DIGITAL */}
           <div className="lg:col-span-7">
             <div className="relative mx-auto w-full max-w-2xl lg:max-w-none">
               {/* Iluminação sutil traseira em azul, ciano e verde */}
@@ -90,7 +90,7 @@ export function Hero() {
               <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-[#030816] shadow-[0_25px_70px_-15px_rgba(6,182,212,0.32)]">
                 <Image
                   src="/hero-laptop-nexa-light.jpg"
-                  alt="Notebook moderno aberto exibindo na tela clara o site institucional da NEXA DIGITAL com a logo oficial, cabeçalho, apresentação e serviços de Landing Pages, Aplicativos, Softwares e Automações"
+                  alt="Notebook moderno aberto exibindo na tela clara o site institucional da NEXZ DIGITAL com a logo oficial, cabeçalho, apresentação e serviços de Landing Pages, Aplicativos, Softwares e Automações"
                   width={1376}
                   height={768}
                   sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 1024px) 672px, 720px"

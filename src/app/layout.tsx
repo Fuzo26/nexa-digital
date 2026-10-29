@@ -15,10 +15,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "NEXA DIGITAL | Landing Pages, Aplicativos, Softwares e Automações",
+  title: "NEXZ DIGITAL | Landing Pages, Aplicativos, Softwares e Automações",
   description: SITE_DESCRIPTION,
   keywords: [
-    "NEXA DIGITAL",
+    "NEXZ DIGITAL",
     "criação de landing pages",
     "desenvolvimento de aplicativos",
     "softwares personalizados",
@@ -30,27 +30,27 @@ export const metadata: Metadata = {
     canonical: `${SITE_URL}/`,
   },
   openGraph: {
-    title: "NEXA DIGITAL | Tecnologia Sob Medida para o Seu Negócio",
+    title: "NEXZ DIGITAL | Tecnologia Sob Medida para o Seu Negócio",
     description: SITE_DESCRIPTION,
     url: `${SITE_URL}/`,
     type: "website",
     locale: "pt_BR",
-    siteName: "NEXA DIGITAL",
+    siteName: "NEXZ DIGITAL",
     images: [
       {
-        url: "/nexa-logo.jpg",
-        width: 1280,
-        height: 698,
+        url: "/nexz-logo-transparent.jpeg",
+        width: 1600,
+        height: 894,
         type: "image/jpeg",
-        alt: "Logo oficial da NEXA DIGITAL",
+        alt: "Logo oficial da NEXZ DIGITAL",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "NEXA DIGITAL | Tecnologia Sob Medida para o Seu Negócio",
+    title: "NEXZ DIGITAL | Tecnologia Sob Medida para o Seu Negócio",
     description: SITE_DESCRIPTION,
-    images: ["/nexa-logo.jpg"],
+    images: ["/nexz-logo-transparent.jpeg"],
   },
   robots: {
     index: true,

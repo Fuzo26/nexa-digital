@@ -16,8 +16,8 @@ export function BrandLogo({
         className={`relative aspect-[266/226] w-full overflow-hidden rounded-2xl p-2 ${className}`}
       >
         <Image
-          src="/nexa-logo-transparent.png"
-          alt="Logo oficial da NEXA DIGITAL"
+          src="/nexz-logo-transparent.png"
+          alt="Logo oficial da NEXZ DIGITAL"
           width={266}
           height={226}
           sizes="(max-width: 1024px) 100vw, 320px"
@@ -33,7 +33,7 @@ export function BrandLogo({
     <Link
       href="/"
       translate="no"
-      aria-label="NEXA DIGITAL - Ir para o início"
+      aria-label="NEXZ DIGITAL - Ir para o início"
       className={`notranslate group inline-flex items-center gap-3 rounded-xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-400 ${className}`}
     >
       {/* Símbolo oficial com fundo transparente integrado diretamente ao cabeçalho escuro */}
@@ -45,8 +45,8 @@ export function BrandLogo({
         }`}
       >
         <Image
-          src="/nexa-logo-transparent.png"
-          alt="Logo oficial da NEXA DIGITAL"
+          src="/nexz-logo-transparent.png"
+          alt="Logo oficial da NEXZ DIGITAL"
           width={266}
           height={226}
           sizes="112px"
@@ -59,7 +59,7 @@ export function BrandLogo({
       <div className="flex flex-col justify-center" translate="no">
         <div className="flex items-center gap-2">
           <span className="text-sm sm:text-base lg:text-lg font-extrabold tracking-[0.14em] text-white leading-none">
-            NEXA DIGITAL
+            NEXZ DIGITAL
           </span>
           <span
             className="inline-block h-2 w-2 shrink-0 rotate-45 bg-gradient-to-tr from-blue-500 via-cyan-400 to-emerald-400 shadow-[0_0_10px_rgba(34,211,238,0.75)]"

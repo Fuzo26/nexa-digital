@@ -19,7 +19,7 @@ export function Footer() {
           <div className="lg:col-span-5">
             <BrandLogo variant="footer" />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-400">
-              A <strong className="font-semibold text-slate-200">NEXA DIGITAL</strong>{" "}
+              A <strong className="font-semibold text-slate-200">NEXZ DIGITAL</strong>{" "}
               é uma marca de tecnologia especializada no desenvolvimento de
               landing pages, aplicativos, softwares personalizados e automações
               para pequenas empresas e profissionais autônomos.
@@ -33,7 +33,7 @@ export function Footer() {
                 href={INSTAGRAM_CONFIG.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={`Visitar o Instagram oficial da NEXA DIGITAL (${INSTAGRAM_CONFIG.handle})`}
+                aria-label={`Visitar o Instagram oficial da NEXZ DIGITAL (${INSTAGRAM_CONFIG.handle})`}
                 className="inline-flex items-center justify-center gap-2.5 rounded-xl border border-white/15 bg-white/[0.03] px-5 py-3.5 text-sm sm:text-base font-semibold text-slate-200 transition-all duration-300 hover:border-cyan-400/50 hover:bg-white/[0.07] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-400"
               >
                 <svg
@@ -97,7 +97,7 @@ export function Footer() {
         {/* Linha divisória e direitos autorais */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-slate-500 sm:flex-row">
           <p>
-            &copy; NEXA DIGITAL. Todos os direitos reservados.
+            &copy; NEXZ DIGITAL. Todos os direitos reservados.
           </p>
           <p className="text-slate-500">
             Tecnologia, design e performance para impulsionar negócios.

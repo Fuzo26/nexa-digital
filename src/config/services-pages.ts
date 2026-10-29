@@ -108,7 +108,7 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
     navLabel: "Criação de Landing Pages",
     accent: "blue",
     seo: {
-      title: "Criação de Landing Pages Profissionais | NEXA DIGITAL",
+      title: "Criação de Landing Pages Profissionais | NEXZ DIGITAL",
       description:
         "Criação de landing pages profissionais de alta conversão para empresas e autônomos. Design exclusivo, carregamento rápido e contato direto no WhatsApp.",
       keywords: [
@@ -117,7 +117,7 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
         "página de vendas",
         "landing page de alta conversão",
         "desenvolvimento de landing page",
-        "NEXA DIGITAL",
+        "NEXZ DIGITAL",
       ],
     },
     hero: {
@@ -127,10 +127,10 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
       subtitle:
         "Transforme visitantes em contatos comerciais qualificados com uma página rápida, persuasiva e projetada sob medida para o seu negócio.",
       description:
-        "Na NEXA DIGITAL, desenvolvemos landing pages com arquitetura estratégica de conversão, visual moderno e integração direta com o seu WhatsApp. Ideal para campanhas de anúncios, lançamento de serviços e posicionamento digital de empresas e profissionais autônomos.",
+        "Na NEXZ DIGITAL, desenvolvemos landing pages com arquitetura estratégica de conversão, visual moderno e integração direta com o seu WhatsApp. Ideal para campanhas de anúncios, lançamento de serviços e posicionamento digital de empresas e profissionais autônomos.",
       ctaLabel: "Solicitar Orçamento de Landing Page",
       whatsappMessage:
-        "Olá! Vim pela página de Criação de Landing Pages da NEXA DIGITAL e gostaria de solicitar um orçamento para minha empresa.",
+        "Olá! Vim pela página de Criação de Landing Pages da NEXZ DIGITAL e gostaria de solicitar um orçamento para minha empresa.",
       keyDeliverablesTitle: "O que sua Landing Page inclui:",
       keyDeliverables: [
         "Design exclusivo alinhado à identidade visual da sua marca",
@@ -240,8 +240,8 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
       ],
     },
     differentialsSection: {
-      badge: "Diferenciais NEXA DIGITAL",
-      heading: "Por que desenvolver sua Landing Page com a NEXA DIGITAL?",
+      badge: "Diferenciais NEXZ DIGITAL",
+      heading: "Por que desenvolver sua Landing Page com a NEXZ DIGITAL?",
       description:
         "Não utilizamos templates lentos ou engessados. Projetamos páginas profissionais feitas para destacar o seu negócio.",
       items: DIFFERENTIALS,
@@ -278,10 +278,10 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
       badge: "Pronto para Captar Mais Clientes?",
       heading: "Solicite o orçamento da sua Landing Page Profissional",
       description:
-        "Converse agora pelo WhatsApp com a NEXA DIGITAL, apresente o seu negócio e receba uma proposta sob medida com condições facilitadas em até 10x no cartão.",
+        "Converse agora pelo WhatsApp com a NEXZ DIGITAL, apresente o seu negócio e receba uma proposta sob medida com condições facilitadas em até 10x no cartão.",
       ctaLabel: "Quero Criar Minha Landing Page",
       whatsappMessage:
-        "Olá! Vim pela página de Criação de Landing Pages da NEXA DIGITAL e quero solicitar um orçamento para o meu negócio.",
+        "Olá! Vim pela página de Criação de Landing Pages da NEXZ DIGITAL e quero solicitar um orçamento para o meu negócio.",
     },
   },
 
@@ -290,7 +290,7 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
     navLabel: "Criação de Sites Profissionais",
     accent: "cyan",
     seo: {
-      title: "Criação de Sites Profissionais para Empresas | NEXA DIGITAL",
+      title: "Criação de Sites Profissionais para Empresas | NEXZ DIGITAL",
       description:
         "Criação de sites profissionais e institucionais sob medida para empresas e profissionais. Estrutura moderna, responsiva e otimizada para o Google.",
       keywords: [
@@ -299,7 +299,7 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
         "desenvolvimento de sites",
         "site institucional para empresas",
         "empresa de criação de sites",
-        "NEXA DIGITAL",
+        "NEXZ DIGITAL",
       ],
     },
     hero: {
@@ -312,7 +312,7 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
         "Desenvolvemos sites profissionais sob medida para empresas, clínicas, escritórios e prestadores de serviços que buscam consolidar sua reputação digital, apresentar seu portfólio completo de soluções e abrir um canal permanente de captação de negócios.",
       ctaLabel: "Solicitar Orçamento de Site Profissional",
       whatsappMessage:
-        "Olá! Vim pela página de Criação de Sites Profissionais da NEXA DIGITAL e gostaria de solicitar um orçamento personalizado para minha empresa.",
+        "Olá! Vim pela página de Criação de Sites Profissionais da NEXZ DIGITAL e gostaria de solicitar um orçamento personalizado para minha empresa.",
       keyDeliverablesTitle: "Estrutura do seu Site Profissional:",
       keyDeliverables: [
         "Arquitetura personalizada para apresentar sua empresa e serviços",
@@ -428,7 +428,7 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
       ],
     },
     differentialsSection: {
-      badge: "Por Que a NEXA DIGITAL",
+      badge: "Por Que a NEXZ DIGITAL",
       heading: "Engenharia moderna e visão comercial para o seu site",
       description:
         "Entregamos sites rápidos, seguros e construídos sob medida para a realidade do seu negócio.",
@@ -456,7 +456,7 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
             "Sim. Todo o layout é projetado de forma responsiva para se adaptar automaticamente a smartphones, tablets, notebooks e monitores de alta resolução.",
         },
         {
-          question: "A NEXA DIGITAL oferece suporte e manutenção após o site ficar pronto?",
+          question: "A NEXZ DIGITAL oferece suporte e manutenção após o site ficar pronto?",
           answer:
             "Sim. Além da entrega completa do projeto, contamos com planos mensais opcionais de manutenção para manter seu site sempre monitorado, seguro e atualizado.",
         },
@@ -469,7 +469,7 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
         "Entre em contato pelo WhatsApp para apresentar a sua necessidade e receber um orçamento sob medida, com parcelamento facilitado em até 10x no cartão.",
       ctaLabel: "Solicitar Orçamento para Meu Site",
       whatsappMessage:
-        "Olá! Vim pela página de Criação de Sites Profissionais da NEXA DIGITAL e quero solicitar um orçamento personalizado.",
+        "Olá! Vim pela página de Criação de Sites Profissionais da NEXZ DIGITAL e quero solicitar um orçamento personalizado.",
     },
   },
 
@@ -478,7 +478,7 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
     navLabel: "Desenvolvimento de Aplicativos",
     accent: "cyan",
     seo: {
-      title: "Desenvolvimento de Aplicativos Sob Medida | NEXA DIGITAL",
+      title: "Desenvolvimento de Aplicativos Sob Medida | NEXZ DIGITAL",
       description:
         "Desenvolvimento de aplicativos mobile e web apps sob medida para empresas e projetos digitais. Interface intuitiva, performance e integração com sistemas.",
       keywords: [
@@ -487,7 +487,7 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
         "aplicativos sob medida",
         "desenvolvimento de app para empresas",
         "web app personalizado",
-        "NEXA DIGITAL",
+        "NEXZ DIGITAL",
       ],
     },
     hero: {
@@ -497,10 +497,10 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
       subtitle:
         "Transforme sua ideia ou necessidade operacional em um aplicativo moderno, fluido, seguro e preparado para crescer junto com o seu negócio.",
       description:
-        "Na NEXA DIGITAL, projetamos e desenvolvemos aplicativos focados na experiência do usuário, estabilidade e desempenho. Seja para lançar um novo produto digital no mercado, criar um canal exclusivo de relacionamento com clientes ou apoiar equipes em campo.",
+        "Na NEXZ DIGITAL, projetamos e desenvolvemos aplicativos focados na experiência do usuário, estabilidade e desempenho. Seja para lançar um novo produto digital no mercado, criar um canal exclusivo de relacionamento com clientes ou apoiar equipes em campo.",
       ctaLabel: "Solicitar Orçamento de Aplicativo",
       whatsappMessage:
-        "Olá! Vim pela página de Desenvolvimento de Aplicativos da NEXA DIGITAL e tenho interesse em desenvolver um aplicativo. Gostaria de apresentar minha ideia e solicitar um orçamento.",
+        "Olá! Vim pela página de Desenvolvimento de Aplicativos da NEXZ DIGITAL e tenho interesse em desenvolver um aplicativo. Gostaria de apresentar minha ideia e solicitar um orçamento.",
       keyDeliverablesTitle: "Pilares do nosso Desenvolvimento de Apps:",
       keyDeliverables: [
         "Interface moderna (UI/UX) intuitiva e fácil de utilizar",
@@ -610,7 +610,7 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
       ],
     },
     differentialsSection: {
-      badge: "Diferenciais NEXA DIGITAL",
+      badge: "Diferenciais NEXZ DIGITAL",
       heading: "Segurança técnica para tirar seu aplicativo do papel",
       description:
         "Comunicação direta, código de qualidade e visão prática para viabilizar o seu projeto mobile ou web app.",
@@ -623,7 +623,7 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
         "Tire suas dúvidas sobre como funciona a criação de um aplicativo sob medida.",
       faqs: [
         {
-          question: "Ainda tenho apenas a ideia do aplicativo. A NEXA DIGITAL ajuda a estruturar o projeto?",
+          question: "Ainda tenho apenas a ideia do aplicativo. A NEXZ DIGITAL ajuda a estruturar o projeto?",
           answer:
             "Sim. Na etapa inicial de diagnóstico, ajudamos você a organizar as funcionalidades essenciais (escopo inicial / MVP) para que o projeto seja viável, objetivo e alinhado ao seu orçamento.",
         },
@@ -648,10 +648,10 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
       badge: "Tire Seu Aplicativo do Papel",
       heading: "Apresente sua ideia e solicite um orçamento personalizado",
       description:
-        "Fale diretamente com a equipe da NEXA DIGITAL pelo WhatsApp e descubra como desenvolver seu aplicativo com parcelamento em até 10x no cartão.",
+        "Fale diretamente com a equipe da NEXZ DIGITAL pelo WhatsApp e descubra como desenvolver seu aplicativo com parcelamento em até 10x no cartão.",
       ctaLabel: "Quero Conversar Sobre Meu Aplicativo",
       whatsappMessage:
-        "Olá! Vim pela página de Desenvolvimento de Aplicativos da NEXA DIGITAL e gostaria de apresentar minha ideia e solicitar um orçamento.",
+        "Olá! Vim pela página de Desenvolvimento de Aplicativos da NEXZ DIGITAL e gostaria de apresentar minha ideia e solicitar um orçamento.",
     },
   },
 
@@ -660,7 +660,7 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
     navLabel: "Softwares Personalizados",
     accent: "teal",
     seo: {
-      title: "Softwares Personalizados e Sistemas Web | NEXA DIGITAL",
+      title: "Softwares Personalizados e Sistemas Web | NEXZ DIGITAL",
       description:
         "Desenvolvimento de softwares personalizados e sistemas web sob medida para pequenas e médias empresas. Substitua planilhas e organize sua gestão.",
       keywords: [
@@ -669,7 +669,7 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
         "sistema web personalizado",
         "sistema de gestão sob medida",
         "empresa de desenvolvimento de software",
-        "NEXA DIGITAL",
+        "NEXZ DIGITAL",
       ],
     },
     hero: {
@@ -679,10 +679,10 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
       subtitle:
         "Substitua planilhas desconectadas e controles manuais por um sistema web desenvolvido exclusivamente para as regras do seu negócio.",
       description:
-        "A NEXA DIGITAL desenvolve sistemas sob medida para empresas que precisam organizar operações, centralizar cadastros, acompanhar indicadores e dar mais agilidade à equipe — sem ficar presas às limitações de softwares genéricos de mercado.",
+        "A NEXZ DIGITAL desenvolve sistemas sob medida para empresas que precisam organizar operações, centralizar cadastros, acompanhar indicadores e dar mais agilidade à equipe — sem ficar presas às limitações de softwares genéricos de mercado.",
       ctaLabel: "Solicitar Orçamento de Software",
       whatsappMessage:
-        "Olá! Vim pela página de Softwares Personalizados da NEXA DIGITAL e tenho interesse em desenvolver um sistema sob medida para meu negócio.",
+        "Olá! Vim pela página de Softwares Personalizados da NEXZ DIGITAL e tenho interesse em desenvolver um sistema sob medida para meu negócio.",
       keyDeliverablesTitle: "O que entregamos no seu Sistema Sob Medida:",
       keyDeliverables: [
         "Mapeamento fiel dos fluxos e regras de negócio da sua operação",
@@ -792,7 +792,7 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
       ],
     },
     differentialsSection: {
-      badge: "Diferenciais NEXA DIGITAL",
+      badge: "Diferenciais NEXZ DIGITAL",
       heading: "Tecnologia sob medida sem complexidade desnecessária",
       description:
         "Focamos em criar sistemas diretos ao ponto, fáceis de operar e que geram ganho real de tempo para o seu negócio.",
@@ -830,10 +830,10 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
       badge: "Organize e Escale Sua Operação",
       heading: "Vamos conversar sobre o sistema personalizado da sua empresa?",
       description:
-        "Explique sua rotina atual pelo WhatsApp e receba uma proposta sob medida da NEXA DIGITAL, com parcelamento em até 10x no cartão de crédito.",
+        "Explique sua rotina atual pelo WhatsApp e receba uma proposta sob medida da NEXZ DIGITAL, com parcelamento em até 10x no cartão de crédito.",
       ctaLabel: "Solicitar Orçamento de Software",
       whatsappMessage:
-        "Olá! Vim pela página de Softwares Personalizados da NEXA DIGITAL e gostaria de conversar sobre um sistema sob medida para minha empresa.",
+        "Olá! Vim pela página de Softwares Personalizados da NEXZ DIGITAL e gostaria de conversar sobre um sistema sob medida para minha empresa.",
     },
   },
 
@@ -842,7 +842,7 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
     navLabel: "Automação Empresarial",
     accent: "emerald",
     seo: {
-      title: "Automação Empresarial e de Processos | NEXA DIGITAL",
+      title: "Automação Empresarial e de Processos | NEXZ DIGITAL",
       description:
         "Soluções de automação empresarial e integração de processos para pequenas empresas e autônomos. Reduza tarefas manuais e ganhe produtividade.",
       keywords: [
@@ -851,7 +851,7 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
         "automação para pequenas empresas",
         "integração de sistemas e fluxos",
         "automação de atendimento e rotinas",
-        "NEXA DIGITAL",
+        "NEXZ DIGITAL",
       ],
     },
     hero: {
@@ -861,10 +861,10 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
       subtitle:
         "Conecte ferramentas, padronize fluxos de atendimento e automatize rotinas operacionais para que sua equipe foque no que realmente gera receita.",
       description:
-        "Na NEXA DIGITAL, desenhamos e implementamos automações sob medida para pequenas empresas e profissionais autônomos. Transformamos processos manuais demorados em fluxos inteligentes, rápidos e livres de esquecimentos.",
+        "Na NEXZ DIGITAL, desenhamos e implementamos automações sob medida para pequenas empresas e profissionais autônomos. Transformamos processos manuais demorados em fluxos inteligentes, rápidos e livres de esquecimentos.",
       ctaLabel: "Solicitar Orçamento de Automação",
       whatsappMessage:
-        "Olá! Vim pela página de Automação Empresarial da NEXA DIGITAL e tenho interesse em automatizar processos da minha empresa. Gostaria de conhecer as soluções disponíveis.",
+        "Olá! Vim pela página de Automação Empresarial da NEXZ DIGITAL e tenho interesse em automatizar processos da minha empresa. Gostaria de conhecer as soluções disponíveis.",
       keyDeliverablesTitle: "O que podemos automatizar no seu negócio:",
       keyDeliverables: [
         "Fluxos inteligentes de triagem e direcionamento de atendimento",
@@ -974,7 +974,7 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
       ],
     },
     differentialsSection: {
-      badge: "Diferenciais NEXA DIGITAL",
+      badge: "Diferenciais NEXZ DIGITAL",
       heading: "Automação prática, sem complicação técnica para você",
       description:
         "Cuidamos de toda a configuração e lógica técnica para que você aproveite apenas a economia de tempo e a organização.",
@@ -1012,10 +1012,10 @@ export const SERVICE_PAGES: Record<ServicePageSlug, ServicePageData> = {
       badge: "Ganhe Tempo e Eficiência",
       heading: "Vamos automatizar os processos repetitivos do seu negócio?",
       description:
-        "Converse com a NEXA DIGITAL no WhatsApp, conte qual rotina você deseja otimizar e receba uma proposta sob medida com parcelamento em até 10x.",
+        "Converse com a NEXZ DIGITAL no WhatsApp, conte qual rotina você deseja otimizar e receba uma proposta sob medida com parcelamento em até 10x.",
       ctaLabel: "Quero Automatizar Meus Processos",
       whatsappMessage:
-        "Olá! Vim pela página de Automação Empresarial da NEXA DIGITAL e gostaria de solicitar um orçamento para automatizar processos na minha empresa.",
+        "Olá! Vim pela página de Automação Empresarial da NEXZ DIGITAL e gostaria de solicitar um orçamento para automatizar processos na minha empresa.",
     },
   },
 };
@@ -1045,14 +1045,14 @@ export function getServicePageMetadata(slug: ServicePageSlug): Metadata {
       url: canonicalUrl,
       type: "website",
       locale: "pt_BR",
-      siteName: "NEXA DIGITAL",
+      siteName: "NEXZ DIGITAL",
       images: [
         {
-          url: "/nexa-logo.jpg",
-          width: 1280,
-          height: 698,
+          url: "/nexz-logo-transparent.jpeg",
+          width: 1600,
+          height: 894,
           type: "image/jpeg",
-          alt: `NEXA DIGITAL - ${page.navLabel}`,
+          alt: `NEXZ DIGITAL - ${page.navLabel}`,
         },
       ],
     },
@@ -1060,7 +1060,7 @@ export function getServicePageMetadata(slug: ServicePageSlug): Metadata {
       card: "summary_large_image",
       title: page.seo.title,
       description: page.seo.description,
-      images: ["/nexa-logo.jpg"],
+      images: ["/nexz-logo-transparent.jpeg"],
     },
     robots: {
       index: true,

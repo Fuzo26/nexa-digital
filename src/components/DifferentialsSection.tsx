@@ -125,7 +125,7 @@ export function DifferentialsSection() {
         {/* Cabeçalho dos Diferenciais */}
         <div className="mx-auto max-w-3xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-500/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-widest text-emerald-300">
-            Por Que Escolher a NEXA DIGITAL
+            Por Que Escolher a NEXZ DIGITAL
           </span>
           <h2
             id="differentials-heading"

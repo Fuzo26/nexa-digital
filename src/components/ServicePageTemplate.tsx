@@ -349,7 +349,7 @@ export function ServicePageTemplate({ page }: { page: ServicePageData }) {
                   <div className="flex items-center justify-between gap-3 border-b border-white/10 pb-5">
                     <div>
                       <span className="text-xs font-semibold uppercase tracking-widest text-emerald-400">
-                        NEXA DIGITAL
+                        NEXZ DIGITAL
                       </span>
                       <h2 className="mt-1 text-lg sm:text-xl font-bold text-white">
                         {page.hero.keyDeliverablesTitle}
@@ -596,7 +596,7 @@ export function ServicePageTemplate({ page }: { page: ServicePageData }) {
           </div>
         </section>
 
-        {/* 5. DIFERENCIAIS DA NEXA DIGITAL + CONDIÇÕES EM ATÉ 10X */}
+        {/* 5. DIFERENCIAIS DA NEXZ DIGITAL + CONDIÇÕES EM ATÉ 10X */}
         <section
           aria-labelledby="service-differentials-heading"
           className="relative py-20 sm:py-24 border-t border-white/10 bg-[#050a16]"
@@ -759,7 +759,7 @@ export function ServicePageTemplate({ page }: { page: ServicePageData }) {
                         href={INSTAGRAM_CONFIG.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label={`Siga a NEXA DIGITAL no Instagram (${INSTAGRAM_CONFIG.handle})`}
+                        aria-label={`Siga a NEXZ DIGITAL no Instagram (${INSTAGRAM_CONFIG.handle})`}
                         className="inline-flex w-full items-center justify-center gap-2.5 rounded-xl border border-white/15 bg-white/[0.03] px-5 py-3 text-sm font-semibold text-slate-200 transition-all duration-300 hover:border-cyan-400/50 hover:bg-white/[0.07] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-400"
                       >
                         <svg
@@ -791,7 +791,7 @@ export function ServicePageTemplate({ page }: { page: ServicePageData }) {
               </div>
             </div>
 
-            {/* Links Internos para Outras Soluções da NEXA DIGITAL */}
+            {/* Links Internos para Outras Soluções da NEXZ DIGITAL */}
             <div className="mt-16">
               <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
                 <div>
@@ -799,7 +799,7 @@ export function ServicePageTemplate({ page }: { page: ServicePageData }) {
                     Conheça também nossas outras soluções digitais
                   </h2>
                   <p className="mt-1 text-sm text-slate-400">
-                    Explore todas as especialidades da NEXA DIGITAL para o seu
+                    Explore todas as especialidades da NEXZ DIGITAL para o seu
                     negócio:
                   </p>
                 </div>

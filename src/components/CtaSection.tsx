@@ -9,31 +9,31 @@ const INTEREST_OPTIONS = [
     id: "landing-page",
     label: "Landing Page",
     message:
-      "Olá! Vim pela landing page da NEXA DIGITAL e tenho interesse em criar uma landing page profissional para minha empresa. Gostaria de conhecer as opções e solicitar um orçamento.",
+      "Olá! Vim pela landing page da NEXZ DIGITAL e tenho interesse em criar uma landing page profissional para minha empresa. Gostaria de conhecer as opções e solicitar um orçamento.",
   },
   {
     id: "aplicativo",
     label: "Aplicativo",
     message:
-      "Olá! Vim pela landing page da NEXA DIGITAL e tenho interesse em desenvolver um aplicativo. Gostaria de apresentar minha ideia e solicitar um orçamento.",
+      "Olá! Vim pela landing page da NEXZ DIGITAL e tenho interesse em desenvolver um aplicativo. Gostaria de apresentar minha ideia e solicitar um orçamento.",
   },
   {
     id: "software",
     label: "Software Personalizado",
     message:
-      "Olá! Vim pela landing page da NEXA DIGITAL e tenho interesse em desenvolver um software personalizado para meu negócio. Gostaria de conversar sobre meu projeto.",
+      "Olá! Vim pela landing page da NEXZ DIGITAL e tenho interesse em desenvolver um software personalizado para meu negócio. Gostaria de conversar sobre meu projeto.",
   },
   {
     id: "automacao",
     label: "Automações",
     message:
-      "Olá! Vim pela landing page da NEXA DIGITAL e tenho interesse em automatizar processos da minha empresa. Gostaria de conhecer as soluções disponíveis.",
+      "Olá! Vim pela landing page da NEXZ DIGITAL e tenho interesse em automatizar processos da minha empresa. Gostaria de conhecer as soluções disponíveis.",
   },
   {
     id: "geral",
     label: "Outro / Dúvida Geral",
     message:
-      "Olá! Vim pelo site da NEXA DIGITAL e gostaria de conversar com um especialista sobre uma solução digital.",
+      "Olá! Vim pelo site da NEXZ DIGITAL e gostaria de conversar com um especialista sobre uma solução digital.",
   },
 ];
 
@@ -74,7 +74,7 @@ export function CtaSection() {
                 Vamos construir a solução ideal para o seu negócio
               </h2>
               <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-300">
-                Conte para a <strong className="text-white">NEXA DIGITAL</strong>{" "}
+                Conte para a <strong className="text-white">NEXZ DIGITAL</strong>{" "}
                 qual é a sua necessidade atual. Nosso atendimento é direto,
                 consultivo e focado em encontrar o melhor caminho tecnológico
                 para sua empresa ou atividade profissional.
@@ -159,7 +159,7 @@ export function CtaSection() {
                     href={INSTAGRAM_CONFIG.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`Siga a NEXA DIGITAL no Instagram (${INSTAGRAM_CONFIG.handle})`}
+                    aria-label={`Siga a NEXZ DIGITAL no Instagram (${INSTAGRAM_CONFIG.handle})`}
                     className="inline-flex w-full items-center justify-center gap-2.5 rounded-xl border border-white/15 bg-white/[0.03] px-5 py-3 text-sm font-semibold text-slate-200 transition-all duration-300 hover:border-cyan-400/50 hover:bg-white/[0.07] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-400"
                   >
                     <svg
